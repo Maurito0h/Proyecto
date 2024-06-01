@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="./css/STYLES.CSS">
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Bella vista</title>
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+    <header>
+        <!--LOGO DE LA PAGINA, MENU DE NAVEGACIÓN, REDES SOCIALES-->
+        <img src=Imagenes/Bella.jpg alt="Logo" class="img1">
+        <a class="inicio" href="index.html">Inicio</a>
+        <a class="navegacion" href="#contenedor">Propiedades</a>
+        <a class="navegacion" href="#qsomos">Quienes somos </a>
+        <a class="contacto" href="#contacto1">Contacto</a>
+        <img src=Imagenes/fb.png alt="Facebook" style="width: 25px; height: 25px;" class="fb">
+        <img src=Imagenes/ig.png alt="Instagram" style="width: 25px; height: 25px;" class="fb">
+        <img src=Imagenes/x.png alt="X" style="width: 25px; height: 25px;" class="fb">
+        <img src=Imagenes/wsp.png alt="Whatsapp" style="width: 25px; height: 25px;" class="fb">
+    </header>
+
+
+
+
+    <main>
+
+
+
+
+        <!--CONTENIDO PRINCIPAL DE LA PAGINA-->
+        <!-- elementos de bloque: <h1> / <p> / -->
+        <!-- elementos de linea: <em> / <strong> / <small> / <br>(fuerza un salto de linea) / <wbr> / <time> / <i> / <b> / <u> / <sup> / <sub>-->
+
+
+        <!--ACA EMPEZAMOS CON CSS   -->
+        <section class="portada">
+            <p><i>
+                    Bienvenido a Bella Vista propiedades, tu socio confiable en bienes raices en Mendoza. Nos
+                    especializamos en conectar personas con hogares ideales y oportunidades excepcionales de inversión.
+                    Nuestro equipo altamente capacitado está aquí para guiarte en cada paso del proceso, ya sea que
+                    estes buscando comprar, vender o alquilar.
+                    Descubre por qué somos la elección preferida en bienes raíces.
+                    <br> ¡Contáctanos hoy y encuentra tu proxima propiedad con nosotros!
+                </i>
+
+
+            </p>
+
+        </section>
+        <section>
+            <img src="/Imagenes/verde4.jpg" class="imgcentral">
+        </section>
+        <section class="formulariobusqueda">
+            <div>
+                <form action="">
+                    <label for=" tipooperacion">
+                        <span class="formbusqtit">Comprar o Alquilar</span>
+                    </label>
+                    <select id="tipop" name="Tipoop" class="selectores">
+                        <option value="Alquilar">Alquilar</option>
+                        <option value="Comprar">Comprar</option>
+                    </select>
+            </div>
+            <div>
+                <label for="tipoinmueble">
+                    <span class="formbusqtit">Tipo de inmueble</span>
+                </label>
+                <select id="tipoi" name="Tipoi" class="selectores">
+                    <option value="Casa">Casa</option>
+                    <option value="Departamento">Departamento</option>
+                    <option value="Lote">Lote</option>
+                </select>
+            </div>
+            <div>
+                <label for="dormitorios">
+                    <span class="formbusqtit">Dormitorios</span>
+                </label>
+                <select id="dorm" name="dormitorios" class="selectores">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4omas">4 o más</option>
+                </select>
+            </div>
+            <div>
+                <label for="zona">
+                    <span class="formbusqtit">Zona/Departamento</span>
+                </label>
+                <select id="zona" name="zona" class="selectores">
+                    <option value="Ciudad">Ciudad</option>
+                    <option value="Godoy Cruz">Godoy Cruz</option>
+                    <option value="Guaymallén">Guaymallén</option>
+                    <option value="Las Heras">Las Heras</option>
+                    <option value="Lujan de Cuyo">Lujan de Cuyo</option>
+                    <option value="Maipú">Maipú</option>
+                </select>
+            </div>
+            <div>
+                <label for="Patio" class="formbusqtit">Patio</label>
+                <input type="checkbox" name="Patio" id="patio">
+
+            </div>
+            <div>
+                <input type="button" value="Buscar" id="buscador">
+            </div>
+
+            </form>
+        </section>
+            <section>
+                <h2 class="titulo1" id="contenedor">PROPIEDADES</h2>
+                <div class="contenedor">
+
+                    <div class="cuadro1">
+                        <a href="/templates/casas.html" class="acuadros"><img src="Imagenes/casa1.jpeg" alt="casa1"
+                                class="casa1" href="./templates/casas.html"></a>
+                        <a href="/templates/casas.html" class="acuadros" target="_blank">
+                            <h2 class="h21">CASAS</h2>
+                        </a>
+                        <p class="p1">¡Click para encontrar la casa de tus sueños!</p>
+                    </div>
+                    <div class="cuadro2">
+                        <a href="/templates/departamentos.html" class="acuadros"><img src="Imagenes/departametos.jpg"
+                                alt="departamentos" class="departamentos" href="./templates/departamentos.html"></a>
+                        <a href="/templates/departamentos.html" class="acuadros">
+                            <h2 class="h21">DEPARTAMENTOS</h2>
+                        </a>
+                        <p class="p2">¿El departamento ideal? ¡Aqui lo encontrarás!</p>
+                    </div>
+                    <div class="cuadro3">
+                        <a href="/templates/lotes.html" class="acuadros"><img src="Imagenes/lotes.jpg" alt="lotes"
+                                class="lotes" href=.//templates/lotes.html></a>
+                        <a href="/templates/lotes.html" class="acuadros">
+                            <h2 class="h21">LOTES</h2>
+                        </a>
+                        <p class="p3">Los mejores lotes para empezar tus proyectos</p>
+                    </div>
+
+
+            </section>
+            <section>
+                <img src="/Imagenes/ciudadhorizontal.jpg" class="choriz" alt="">
+            </section>
+
+            <section class="qsomos" id="qsomos">
+                <div class="contenedor3">
+
+                    <div class="contenedor2">
+                        <h2 class="titulo2">QUIENES SOMOS</h2>
+                        <div class="cuadro4">
+                            <img src="/Imagenes/persona1.jpeg" class="persona1" alt="">
+                            <h1 class="nombres">Javier Rodríguez</h1>
+                            <h3 class="descripciones">Experto en Finanzas y Asesoramiento Hipotecario</h3>
+                            <p class="definiciones">
+                                Javier es un experto en finanzas con un historial comprobado en asesoramiento
+                                hipotecario.
+                                Su capacidad para simplificar conceptos financieros complejos y su compromiso con
+                                encontrar
+                                las mejores soluciones financieras hacen que sea el compañero ideal para aquellos
+                                que
+                                buscan
+                                financiar su inversión inmobiliaria de manera inteligente.
+                            </p>
+                        </div>
+                        <div class="cuadro5">
+                            <img src="/Imagenes/persona2.jpg" class="persona2" alt="">
+                            <h1 class="nombres">María López</h1>
+                            <h3 class="descripciones">Directora de Ventas y Relaciones Clientes</h3>
+                            <p class="definiciones">
+                                María es una apasionada del sector inmobiliario con más de una década de experiencia
+                                en
+                                ventas y atención al cliente. Su enfoque centrado en el cliente y su profundo
+                                conocimiento
+                                del mercado la convierten en una aliada invaluable para aquellos que buscan
+                                encontrar su
+                                hogar perfecto
+                            </p>
+                        </div>
+                        <div class="cuadro6">
+                            <img src="/Imagenes/persona3.jpeg" class="persona3" alt="">
+                            <h1 class="nombres">Luis Martínez</h1>
+                            <h3 class="descripciones">Especialista en Marketing y Promoción Inmobiliaria</h3>
+                            <p class="definiciones">
+                                Luis es un estratega de marketing creativo con un ojo agudo para la promoción
+                                inmobiliaria. Su experiencia en branding y marketing digital garantiza que cada
+                                propiedad
+                                reciba la máxima exposición en el mercado. Con Luis a la cabeza, puedes estar seguro
+                                de
+                                que
+                                tu propiedad será presentada de manera atractiva y efectiva para atraer a los
+                                compradores
+                                adecuados.
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+
+
+                        <p>
+                            No dudes en enviarnos tus comentarios, consultas, dudas o sugerencias. Nuestro equipo de
+                            profesionales te responderá a la brevedad.
+                        </p>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+            </section>
+            <section class="contenedorcontacto">
+                <section>
+                    <div>
+                        <form action="Contacto" class="contacto1" id="contacto1">
+                            <h2>Contactanos</h2>
+                            <div class="labels">
+                                <label for="Nombre">Nombre</label>
+                            </div>
+                            <input type="Nombre" pattern="(([A-z a-z-ñÑ-áéíóúÁÉÍÓÚ])\w+)\w+"
+                                placeholder="Ingrese su nombre" style="width: 300px;" class="cuadrocontacto">
+                            <div class="labels">
+                                <label for="Teléfono">Teléfono</label>
+                            </div>
+                            <input type="tel" pattern="([0-9])\w+" placeholder="Ingrese su teléfono" required="" id=""
+                                style="width: 300px;" class="cuadrocontacto">
+                            <div class="labels">
+                                <label for="email">Email</label>
+                            </div>
+                            <input type="email" pattern="([a-z-ñÑ@])\w+" placeholder="Ingrese su email" required=""
+                                name="" id="" style="width: 300px;" class="cuadrocontacto">
+                            <div class="labels">
+                                <label for="consulta">Consulta</label>
+                            </div>
+                            <textarea class=cuadrocontacto placeholder="Ingrese su consulta, duda o sugerencia"
+                                required="" data-default="" placeholder="" value="" name="" id=""
+                                style=" height: 200px; width: 300px;"></textarea>
+                            <br>
+                            <br><input type="submit" value="Enviar" class="cuadrocontacto"
+                                style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(54, 54, 126);">
+                        </form>
+                    </div>
+
+                </section>
+                <section class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.351535754793!2d-68.8404711!3d-32.8888727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091a2a2ed1bf%3A0xb8ee5fe2b7148fcd!2s9%20de%20Julio%2C%20M5500%20Mendoza!5e0!3m2!1ses-419!2sar!4v1715512049943!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="debajomapa">Inmobiliaria Bella Vista <br>
+                        9 de Julio 1160 - Mendoza - Argentina <br>
+                        Teléfono / Whatsapp: 261-12345678 <br>
+                        E-Mail: inmobiliariabellavista@gmail.com
+
+                    </p>
+
+                </section>
+
+            </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <!-- PIE DE PAGINA - SIMILAR A HEADER-->
+
+
+
+        <img src=../Imagenes/Bella2.jpg alt="Logo" class="img2">
+        <p class="navpie1">9 de Julio 1160 - Mendoza - Argentina <br>Teléfono / Whatsapp: 261-12345678 <br>E-Mail:
+            inmobiliariabellavista@gmail.com </p>
+        <a class="navpie" href="index.html">Inicio</a>
+        <a class="navpie" href="index.html#contenedor">Propiedades</a>
+        <a class="navpie" href="index.html#qsomos">Quienes somos </a>
+        <a class="navpie" href="index.html#contacto1">Contacto</a>
+        <img src="Imagenes/fb.png" alt="Facebook" style="width: 25px; height: 25px;" class="fb">
+        <img src="Imagenes/ig.png" alt="Instagram" style="width: 25px; height: 25px;" class="fb">
+        <img src="Imagenes/x.png" alt="X" style="width: 25px; height: 25px;" class="fb">
+        <img src="Imagenes/wsp.png" alt="Whatsapp" style="width: 25px; height: 25px;" class="fb">
+
+    </footer>
+</body>
+
+</html>
