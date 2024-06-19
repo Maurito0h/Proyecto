@@ -110,6 +110,8 @@ header {
 }
 
 .navpie:hover,
+.navpieprop:hover,
+.navpiecont:hover,
 .inicio:hover,
 .navegacion:hover,
 .contacto:hover {
@@ -1414,6 +1416,8 @@ footer {
             padding: 2px;
         }
         .contenedoralquileres{
+            width: auto;
+            height: auto;
             margin: auto;
             justify-content: center;
         }
