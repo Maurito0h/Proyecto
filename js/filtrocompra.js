@@ -1,7 +1,7 @@
 function BuscarProductos1() {
     const cat = document.getElementById('catcompra').value;
     const localidad = document.getElementById('localidadcasas').value;
-    const habitaciones = document.getElementById('habitacionescompra').value; // Verifica este ID
+    const habitaciones = document.getElementById('habitacionescompra').value; 
     const precioSeleccionado = document.getElementById('precio1').value;
 
     let precioMin = 0;
@@ -38,7 +38,7 @@ function BuscarProductos1() {
 
             const propiedadesFiltradas = [];
 
-            // Combina ambas colecciones de propiedades
+
             const todasPropiedades = [...json.compracasas, ...json.compradeptos];
 
             todasPropiedades.forEach((el) => {
@@ -72,23 +72,23 @@ function BuscarProductos1() {
         }
     });
 
-    xhr.open("GET", '../data/datoscompra.json'); // Verifica que la ruta sea correcta
+    xhr.open("GET", '../data/datoscompra.json'); 
     xhr.send();
 }
 
 function LimpiarFiltros() {
     document.getElementById('catcompra').value = "";
     document.getElementById('localidadcasas').value = "";
-    document.getElementById('habitacionescasas').value = ""; // Asegúrate que este ID sea correcto
+    document.getElementById('habitacionescasas').value = ""; 
     document.getElementById('precio1').value = "";
 
-    // Llama a la función BuscarProductos para mostrar todos los resultados
+
     BuscarProductos1();
 }
 
-// Asignar eventos a los botones
+
 document.getElementById("buscador1").addEventListener("click", function(event) {
-    event.preventDefault(); // Evita la recarga de la página
+    event.preventDefault(); 
     BuscarProductos1();
 });
 document.getElementById("limpiarFiltros").addEventListener("click", LimpiarFiltros);

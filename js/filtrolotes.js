@@ -1,4 +1,4 @@
-// Función para buscar y filtrar lotes
+
 function BuscarLotes() {
     const localidad = document.getElementById('localidadlotes').value;
     const superficieSeleccionada = document.getElementById('superficie').value;
@@ -9,7 +9,7 @@ function BuscarLotes() {
     let precioMin = 0;
     let precioMax = Infinity;
 
-    // Filtrar por rango de superficie
+
     switch (superficieSeleccionada) {
         case '1':
             superficieMax = 499;
@@ -29,7 +29,7 @@ function BuscarLotes() {
             break;
     }
 
-    // Filtrar por rango de precios
+
     switch (precioSeleccionado) {
         case 'rango1':
             precioMax = 9999;
@@ -88,23 +88,23 @@ function BuscarLotes() {
         }
     });
 
-    xhr.open("GET", '../data/datoslotes.json'); // Verifica que la ruta sea correcta
+    xhr.open("GET", '../data/datoslotes.json'); 
     xhr.send();
 }
 
-    // Llama a la función BuscarLotes para mostrar todos los resultados
+  
     BuscarLotes();
 
 
-// Asignar eventos a los botones
+
 document.getElementById("buscador2").addEventListener("click", function(event) {
-    event.preventDefault(); // Evita la recarga de la página
+    event.preventDefault(); 
     BuscarLotes();
 });
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("buscador2").addEventListener("click", function(event) {
-        event.preventDefault(); // Evita la recarga de la página
-        BuscarLotes(); // Llama a la función para buscar lotes
+        event.preventDefault(); 
+        BuscarLotes(); 
     });
 
     document.getElementById("limpiarFiltros").addEventListener("click", function(event) {

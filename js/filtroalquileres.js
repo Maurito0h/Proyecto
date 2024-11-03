@@ -83,11 +83,11 @@ function LimpiarFiltros() {
     document.getElementById('habitaciones').value = "";
     document.getElementById('precio').value = "";
 
-    // Llama a la función BuscarProductos para mostrar todos los resultados
+
     BuscarProductos();
 }
 
-// Asignar eventos a los botones
+
 document.getElementById("buscador1").addEventListener("click", BuscarProductos);
 document.getElementById("limpiarFiltros").addEventListener("click", LimpiarFiltros);
 
@@ -114,15 +114,15 @@ function obtenerParametrosURL() {
 function inicializarBusqueda() {
     const filtros = obtenerParametrosURL();
 
-    // Aquí podrías asignar los valores a los inputs si deseas que se muestren
+
     document.getElementById('catcasas').value = filtros.categoria;
     document.getElementById('localidad').value = filtros.localidad;
     document.getElementById('habitaciones').value = filtros.habitaciones;
     document.getElementById('precio').value = filtros.precio;
 
-    // Llama a la función BuscarProductos para filtrar con los parámetros
+
     BuscarProductos();
 }
 
-// Ejecuta la función al cargar la página
+
 window.onload = inicializarBusqueda;
