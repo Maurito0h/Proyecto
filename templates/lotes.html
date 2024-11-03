@@ -43,14 +43,10 @@
             <div class="formularioalquileres">
                 <form action="">
                     <div class="formalquileres">
-                        <label for="tipopropiedad" class="busquedaalquileres">Tipo de propiedad</label>
-                        <select id="" name="" class="selectoralquileres">
-                            <option value="Casa">Casa</option>
-                            <option value="Departamento">Departamento</option>
-                        </select>
-
+                                        
                         <label for="Localidad" class="busquedaalquileres">Localidad</label>
-                        <select id="" name="" class="selectoralquileres">
+                        <select id="localidadlotes" name="" class="selectoralquileres">
+                            <option value=""></option>
                             <option value="Ciudad">Ciudad</option>
                             <option value="Godoy Cruz">Godoy Cruz</option>
                             <option value="Guaymallén">Guaymallén</option>
@@ -59,21 +55,28 @@
                             <option value="Maipú">Maipú</option>
                         </select>
 
-                        <label for="Habitaciones" class="busquedaalquileres">Habitaciones</label>
-                        <select id="" name="" class="selectoralquileres">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4 o más">4 o más</option>
+                        <label for="Superficie" class="busquedaalquileres">Superficie</label>
+                        <select id="superficie" name="" class="selectoralquileres">
+                            <option value=""></option>
+                            <option value="1">0 m2 a 499 m2</option>
+                            <option value="2">500 m2 a 749 m2</option>
+                            <option value="3">750 m2 a 999 m2</option>
+                            <option value="4">1000 m2 o más</option>
                         </select>
                         <label for="Rango de precios" class="busquedaalquileres">Rango de precios</label>
-                        <select name="" id="" class="selectoralquileres">
-                            <option value="rango1">US$ 0 a US$ 10.000</option>
-                            <option value="rango1">US$ 10.000 a US$ 15.000</option>
-                            <option value="rango1">US$ 15.000 a US$ 20.000</option>
-                            <option value="rango1">US$ 20.000 o más </option>
+                        <select name="" id="precio2" class="selectoralquileres">
+                            <option value=""></option>
+                            <option value="rango1">US$ 0 a US$ 9.999</option>
+                            <option value="rango2">US$ 10.000 a US$ 14.999</option>
+                            <option value="rango3">US$ 15.000 a US$ 19.999</option>
+                            <option value="rango4">US$ 20.000 o más </option>
 
                         </select>
+                        <div id="buscadores">
+                            <button id="buscador2">Buscar</button><div>
+                            <button id="limpiarFiltros">Limpiar Filtros</button>
+                            </div>
+                        </div>
                     </div>
 
 
@@ -82,117 +85,13 @@
             </div>
         </div>
         <div id="listado2">
-            <div class="contenedoralquileres">
-                <div class="contenedoralquileres2">
-                    <div class="contenedorimagenes">
-                        <img src="../Assets/lotes/lote1.jpg" alt="Casa2" class="casa2" id="casa1">
-                        <h1 class="precio">US$ 20.000</h1>
-                        <h2 class="ubicacion">Lote</h2>
-                        <h3 class="ubicacion">Luján de Cuyo</h3>
-                        <p class="descripcion">Lote de 500 m² en una tranquila zona residencial. Ideal para construir la
-                            casa de tus sueños, cercano a parques y escuelas. <br></p>
-
-                    </div>
-                    <div class="contenedorimagenes">
-                        <img src="../Assets/lotes/lote2.jpg" alt="" class="casa2">
-                        <h1 class="precio">US$ 40.000</h1>
-                        <h2 class="ubicacion">Lote</h2>
-                        <h3 class="ubicacion">Maipú</h3>
-                        <p class="descripcion">Lote de 1000 m² en un entorno campestre.
-                            Rodeado de naturaleza y tranquilidad, perfecto para escapadas de fin de semana.
-                        </p>
-                    </div>
-                    <div class="contenedorimagenes">
-                        <img src="../Assets/lotes/lote3.jpeg" alt="" class="casa2">
-                        <h1 class="precio">US$ 15.000</h1>
-                        <h2 class="ubicacion">Lote</h2>
-                        <h3 class="ubicacion">Ciudad</h3>
-                        <p class="descripcion">Lote de 400 m² en una exclusiva urbanización privada con seguridad 24/7.
-                            Acceso a servicios y áreas recreativas. </p>
-
-                    </div>
-
-                </div>
-                </section>
-
-                <section>
-
-
-                    <div class="contenedoralquileres">
-                        <div class="contenedoralquileres2">
-                            <div class="contenedorimagenes">
-                                <img src="../Assets/lotes/lote4.jpg" alt="Casa2" class="casa2">
-                                <h1 class="precio">US$ 25.000</h1>
-                                <h2 class="ubicacion">Lote</h2>
-                                <h3 class="ubicacion">Las Heras</h3>
-                                <p class="descripcion">Lote de 800 m² con vistas panorámicas a la montaña. Ideal para
-                                    una
-                                    residencia que busque combinar confort y naturaleza.
-                                </p>
-                            </div>
-                            <div class="contenedorimagenes">
-                                <img src="../Assets/lotes/lote5.jpeg" alt="" class="casa2">
-                                <h1 class="precio">US$ 10.000</h1>
-                                <h2 class="ubicacion">Lote</h2>
-                                <h3 class="ubicacion">Godoy Cruz</h3>
-                                <p class="descripcion">Lote de 300 m² en el centro de la ciudad, con fácil acceso a
-                                    transporte público y servicios. Excelente para desarrollo residencial.
-                                </p>
-                            </div>
-                            <div class="contenedorimagenes">
-                                <img src="../Assets/lotes/lote6.jpg" alt="" class="casa2">
-                                <h1 class="precio">US$ 20.000</h1>
-                                <h2 class="ubicacion">Lote</h2>
-                                <h3 class="ubicacion">Guaymallén</h3>
-                                <p class="descripcion">Lote de 750 m² en una tranquila área suburbana. Espacio
-                                    suficiente
-                                    para una casa grande y un amplio jardín.
-                                </p>
-                            </div>
-
-                        </div>
-                </section>
-
-
-
-                <section>
-                    <div class="contenedoralquileres">
-                        <div class="contenedoralquileres2">
-                            <div class="contenedorimagenes">
-                                <img src="../Assets/lotes/lote7.jpeg" alt="Casa2" class="casa2">
-                                <h1 class="precio">US$ 16.000</h1>
-                                <h2 class="ubicacion">Lote</h2>
-                                <h3 class="ubicacion">Guaymallén</h3>
-                                <p class="descripcion">Lote de 450 m² en un nuevo desarrollo residencial con todas las
-                                    comodidades modernas. Ideal para una vivienda.</p>
-                            </div>
-                            <div class="contenedorimagenes">
-                                <img src="../Assets/lotes/lote8.jpg" alt="" class="casa2">
-                                <h1 class="precio">US$ 22.000</h1>
-                                <h2 class="ubicacion">Lote</h2>
-                                <h3 class="ubicacion">Godoy Cruz</h3>
-                                <p class="descripcion">Lote de 500 m² en una zona en pleno desarrollo. Excelente
-                                    oportunidad
-                                    de inversión en un área con rápido crecimiento urbano. </p>
-                            </div>
-                            <div class="contenedorimagenes">
-                                <img src="../Assets/lotes/lote9.jpg" alt="" class="casa2">
-                                <h1 class="precio">US$ 30.000</h1>
-                                <h2 class="ubicacion">Lote</h2>
-                                <h3 class="ubicacion">Lujan de Cuyo</h3>
-                                <p class="descripcion">Amplio lote de 1500 m² ubicado en esquina, ofreciendo mayor
-                                    privacidad y flexibilidad en el diseño arquitectónico. </p>
-                            </div>
-
-                        </div>
-                </section>
-            </div>
-
         </div>
-
         <script src="../js/ajax.js"></script>
+        <script src="../js/filtrolotes.js"></script>
         <script>
             GetLotes();
+            
+            document.getElementById("buscador2").addEventListener("click",BuscarLotes);
         </script>
 
 
@@ -222,6 +121,7 @@
             <img src=../Assets/wsp.png alt="Whatsapp" style="width: 25px; height: 25px;" class="fb1">
         </div>
     </footer>
+ 
 </body>
 
 </html>

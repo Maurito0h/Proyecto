@@ -45,7 +45,7 @@
 
 
         <!--CONTENIDO PRINCIPAL DE LA PAGINA-->
-        
+
         <section class="portada">
             <p class="textocentral"><i>
                     Bienvenido a Bella Vista propiedades, tu socio confiable en bienes raices en Mendoza. Nos
@@ -62,8 +62,9 @@
         </section>
         <div class="formbusq">
             <section class="formulariobusqueda">
+       
                 <div>
-                    <form action="">
+                    <form id="search-form" method="GET">
                         <label for=" tipooperacion">
                             <span class="formbusqtit">Comprar o Alquilar</span>
                         </label>
@@ -82,42 +83,8 @@
                         <option value="Lote">Lote</option>
                     </select>
                 </div>
-                <div>
-                    <label for="dormitorios">
-                        <span class="formbusqtit">Dormitorios</span>
-                    </label>
-                    <select id="dorm" name="dormitorios" class="selectores">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4omas">4 o más</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="zona">
-                        <span class="formbusqtit">Zona/Departamento</span>
-                    </label>
-                    <select id="zona" name="zona" class="selectores">
-                        <option value="Ciudad">Ciudad</option>
-                        <option value="Godoy Cruz">Godoy Cruz</option>
-                        <option value="Guaymallén">Guaymallén</option>
-                        <option value="Las Heras">Las Heras</option>
-                        <option value="Lujan de Cuyo">Lujan de Cuyo</option>
-                        <option value="Maipú">Maipú</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="Patio" class="formbusqtit" id="patio1">Patio</label>
-                    <div class="checkbox-wrapper-2">
-                        <input type="checkbox" class="checkpatio">
-                    </div>
-                </div>
-                <div>
-                    <label for="Cochera" class="formbusqtit" id="patio1">Cochera</label>
-                    <div class="checkbox-wrapper-2">
-                        <input type="checkbox" class="checkpatio">
-                    </div>
-                </div>
+
+
                 <div>
                     <input type="button" value="Buscar" id="buscador">
                 </div>
@@ -225,29 +192,36 @@
                 <form action="Contacto" class="contacto1" id="contacto1">
                     <h2>Contactanos</h2>
                     <div class="labels">
-                        <label for="Nombre">Nombre</label>
-                    </div>
-                    <input type="Nombre" pattern="(([A-z a-z-ñÑ-áéíóúÁÉÍÓÚ])\w+)\w+" placeholder="Ingrese su nombre"
-                        style="width: 300px;" class="cuadrocontacto">
-                    <div class="labels">
-                        <label for="Teléfono">Teléfono</label>
-                    </div>
-                    <input type="tel" pattern="([0-9])\w+" placeholder="Ingrese su teléfono" required="" id=""
-                        style="width: 300px;" class="cuadrocontacto">
-                    <div class="labels">
-                        <label for="email">Email</label>
-                    </div>
-                    <input type="email" pattern="([a-z-ñÑ@])\w+" placeholder="Ingrese su email" required="" name=""
-                        id="" style="width: 300px;" class="cuadrocontacto">
-                    <div class="labels">
-                        <label for="consulta">Consulta</label>
-                    </div>
-                    <textarea class=cuadrocontacto placeholder="Ingrese su consulta, duda o sugerencia" required=""
-                        data-default="" placeholder="" value="" name="" id=""
-                        style=" height: 200px; width: 300px;"></textarea>
-                    <br>
-                    <br><input type="submit" value="Enviar" class="cuadrocontacto"
-                        style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(54, 54, 126);">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <div>
+                            <input type="text" name="nombre" placeholder="Ingrese su nombre" class="cuadrocontacto"
+                                style="width: 300px;">
+                            <div class="error-message" id="error-nombre" style="display: none; color: red;"></div>
+                        </div>
+                        <div>
+                            <label for="tel">Teléfono</label>
+                        </div>
+                        <div>
+                            <input type="tel" name="tel" placeholder="Ingrese su teléfono" class="cuadrocontacto"
+                                style="width: 300px;">
+                            <div class="error-message" id="error-tel" style="display: none; color: red;"></div>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Ingrese su email" class="cuadrocontacto"
+                                style="width: 300px;">
+                            <div class="error-message" id="error-email" style="display: none; color: red;"></div>
+                        </div>
+                        <textarea class=cuadrocontacto placeholder="Ingrese su consulta, duda o sugerencia" required=""
+                            data-default="" value="" name="" id="textarea1"
+                            style=" height: 200px; width: 300px;"></textarea>
+                        <br>
+                        <br><input type="submit" value="Enviar" class="cuadrocontacto" name="cuadro" id="textarea1"
+                            style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(54, 54, 126);">
                 </form>
 
 
@@ -269,7 +243,7 @@
 
 
 
-
+        <script src="../js/validacionformulario.js"></script>
     </main>
 
 
@@ -299,9 +273,10 @@
             <img src="Assets/facebook.png" alt="Facebook" style="width: 25px; height: 25px;" class="fb1">
             <img src="Assets/ig.png" alt="Instagram" style="width: 25px; height: 25px;" class="fb1">
             <img src="Assets/x.png" alt="X" style="width: 25px; height: 25px;" class="fb1">
-            <img src="Assets/wsp.png" alt="Whatsapp" style="width: 25px; height: 25px;" class="fb1"> 
+            <img src="Assets/wsp.png" alt="Whatsapp" style="width: 25px; height: 25px;" class="fb1">
         </div>
     </footer>
+    <script src="js/filtroprincipal.js"></script>
 </body>
 
 </html>

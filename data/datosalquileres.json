@@ -1,0 +1,128 @@
+{ 
+  "alquilerescasas": [
+    {
+      "precioif": 450,
+      "precio": "US$ 450",
+      "tipo": "Casa",
+      "localidad": "Luján de Cuyo",
+      "descripcion": "Elegante y privada, con una sensación de serenidad que evoca la vida en una hacienda.",
+      "detalleinterno": "2 Dormitorios | 1 Baño | Cochera | 100 m<sup>2</sup>",
+      "habitaciones":2,
+      "img": "../Assets/alquileres/casa2.jpg"
+    },
+    {
+      "precioif": 400,
+      "precio": "US$ 400",
+      "tipo": "Casa",
+      "localidad": "Maipú",
+      "descripcion": "Tranquilidad rural, jardines serenos y rincones para relajarse.",
+      "detalleinterno": "3 Dormitorios | 1 Baño | Patio | 150 m<sup>2</sup>",
+      "habitaciones":3,
+      "img": "../Assets/alquileres/casa3.jpg"
+    },
+    {
+      "precioif": 400,
+      "precio": "US$ 400",
+      "tipo": "Casa",
+      "localidad": "Ciudad",
+      "descripcion": "Diseño contemporáneo con líneas limpias y grandes ventanales",
+      "detalleinterno": "2 Dormitorios | 1 Baño | Cochera | 130 m<sup>2</sup>",
+      "habitaciones":2,
+      "img": "../Assets/alquileres/casa4.jpeg"
+    },
+    
+    {
+      "precioif": 300,
+      "precio": "US$ 300",
+      "tipo": "Casa",
+      "localidad": "Guaymallén",
+      "descripcion": "Encanto histórico con techos altos y porches amplios.",
+      "detalleinterno": "1 Dormitorio | 1 Baño | Patio | 120 m<sup>2</sup>",
+      "habitaciones":1,
+      "img": "../Assets/alquileres/casa8.jpg"
+    },
+    {
+      "precioif": 420,
+      "precio": "US$ 420",
+      "tipo": "Casa",
+      "localidad": "Godoy Cruz",
+      "descripcion": "Vanguardia y luminosidad en diseño contemporáneo.",
+      "detalleinterno": "3 Dormitorios | 2 Baños | Cochera | 200 m<sup>2</sup>",
+      "habitaciones":3,
+      "img": "../Assets/alquileres/casa9.jpg"
+    },
+    {
+      "precioif": 400,
+      "precio": "US$ 400",
+      "tipo": "Casa",
+      "localidad": "Ciudad",
+      "descripcion": "Moderna con grandes ventanales y conexión con el entorno.",
+      "detalleinterno": "2 Dormitorios | 1 Baño | Cochera | 180 m<sup>2</sup>",
+      "habitaciones":2,
+      "img": "../Assets/alquileres/casa10.jpg"
+    }
+  ],
+    "alquileresdeptos": [
+    {
+      "precioif": 190,
+      "precio": "US$ 190",
+      "tipo": "Departamento",
+      "localidad": "Ciudad",
+      "descripcion": "Privacidad y elegancia, patios interiores y diseño contemporáneo.",
+      "detalleinterno": "2 Dormitorios | 1 Baño | Cochera | 70 m<sup>2</sup>",
+      "habitaciones":2,
+      "img": "../Assets/alquileres/Departamento4.jpg"
+    },
+    {
+      "precioif": 210,
+      "precio": "US$ 210",
+      "tipo": "Departamento",
+      "localidad": "Maipú",
+      "descripcion": "Estilo industrial, espacios abiertos y atmósfera cosmopolita.",
+      "detalleinterno": "1 Dormitorios | 1 Baño | Patio | 50 m<sup>2</sup>",
+      "habitaciones":1,
+      "img": "../Assets/alquileres/Departamento6.jpg"
+    },
+    {
+      "precioif": 200,
+      "precio": "US$ 200",
+      "tipo": "Departamento",
+      "localidad": "Las Heras",
+      "descripcion": "Rusticidad y calidez con toques en madera y piedra.",
+      "detalleinterno": "1 Dormitorios | 1 Baño | Cochera | 40 m<sup>2</sup>",
+      "habitaciones":1,
+      "img": "../Assets/alquileres/Departamento7.jpg"
+    },
+    {
+      "precioif": 250,
+      "precio": "US$ 250",
+      "tipo": "Departamento",
+      "localidad": "Las Heras",
+      "descripcion": "Espacio moderno y tranquilo con enfoque en la simplicidad.",
+      "detalleinterno": "1 Dormitorio | 1 Baño | Balcón | 70 m<sup>2</sup>",
+      "habitaciones":1,
+      "img": "../Assets/alquileres/Departamento1.jpg"
+    },
+    {
+      "precioif": 300,
+      "precio": "US$ 300",
+      "tipo": "Departamento",
+      "localidad": "Godoy Cruz",
+      "descripcion": "Privacidad y tranquilidad con patios interiores y toques contemporáneos.",
+      "detalleinterno": "2 Dormitorios | 1 Baños | Cochera | 80 m<sup>2</sup>",
+      "habitaciones":2,
+      "img": "../Assets/alquileres/Departamento2.jpg"
+    },
+    {
+      "precioif": 200,
+      "precio": "US$ 200",
+      "tipo": "Departamento",
+      "localidad": "Guaymallén",
+      "descripcion": "Ambiente costero, colores claros y acceso directo a la playa.",
+      "detalleinterno": "1 Dormitorio | 1 Baño | Cochera | 60 m<sup>2</sup>",
+      "habitaciones":1,
+      "img": "../Assets/alquileres/Departamento3.jpg"
+    }
+  ]
+
+}

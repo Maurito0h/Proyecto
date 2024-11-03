@@ -105,7 +105,8 @@ header {
     text-decoration: dashed;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-.textocontacto{
+
+.textocontacto {
     text-align: center;
 }
 
@@ -259,6 +260,17 @@ header {
     background-color: #303ca5;
 }
 
+#buscador {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(38, 85, 146);
+    font-size: larger;
+}
 
 
 
@@ -401,7 +413,7 @@ header {
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 10px;
-    border-color: rgb(60, 76, 121);
+    border-color: rgb(4, 17, 54);
     border-style: solid;
     background-color: rgb(196, 160, 116);
 }
@@ -494,7 +506,6 @@ footer {
     align-items: center;
     font-size: smaller;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    
 }
 
 .navpie {
@@ -533,11 +544,13 @@ footer {
     align-items: end;
     margin: 3%;
 }
-.textopie{
+
+.textopie {
     margin-left: 0%;
     margin: 0%;
 }
-.navpieprop{
+
+.navpieprop {
     font-size: smaller;
     margin-right: 2%;
     color: bisque;
@@ -546,7 +559,8 @@ footer {
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-.navpiecont{
+
+.navpiecont {
     font-size: smaller;
     margin-right: 2%;
     margin-left: 2%;
@@ -560,6 +574,7 @@ footer {
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 /* PESTAÑA CASAS */
+
 .titulosalquileres {
     padding: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -581,6 +596,11 @@ footer {
     display: flex;
 }
 
+#buscadores {
+    display: flex;
+    align-items: center;
+}
+
 .busquedaalquileres {
 
     margin: 5px;
@@ -600,16 +620,43 @@ footer {
 
 }
 
-#buscador {
+#textarea1 {
+    margin-top: 20px;
+}
+
+#error-nombre,
+#error-tel,
+#error-email {
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+}
+
+#buscador1,
+#buscador2 {
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 5px;
+    padding: 2px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(38, 85, 146);
     font-size: larger;
+    margin-left: 20px;
+}
+
+#limpiarFiltros {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(38, 85, 146);
+    font-size: x-small;
+    margin-left: 20px;
 }
 
 
@@ -660,31 +707,23 @@ footer {
     font-weight: normal;
 }
 
-
-
-.contenedoralquileres {
-    text-align: center;
-    align-items: center;
-    display: block;
-    padding: 10px;
+#listado,
+#listado1,
+#listado2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.contenedorimagenes {
+
+.contenedorinterno {
     margin: 20px;
-    align-items: center;
     text-align: center;
     border-style: solid;
     border-radius: 10px;
-    height: 33%;
-    width: 33%;
+    height: auto;
+    width: auto;
     padding: 10px;
     border-color: rgb(42, 25, 104);
-}
-
-.contenedoralquileres2 {
-
-    display: flex;
-    padding: 10px;
 }
 
 .precio {
@@ -694,7 +733,8 @@ footer {
 
 }
 
-.ubicacion {
+.ubicacion,
+.tipo {
     margin: 0%;
 }
 
@@ -707,7 +747,7 @@ footer {
 }
 
 .casa2 {
-    height: 100%;
+    height: auto;
     width: 100%;
     border-radius: 8px;
 }
@@ -988,26 +1028,39 @@ footer {
         .selectores {
             font-size: medium;
         }
-        .titulosalquileres      {
+
+        .titulosalquileres {
             font-size: large;
         }
+
         .busquedaalquileres,
-        .selectoralquileres{
+        .selectoralquileres {
             font-size: medium;
         }
-        .precio{
+
+        .precio {
             font-size: x-large;
         }
+
         .ubicacion,
+        .tipo,
         .descripcion,
-        .detalleinterno{
+        .detalleinterno {
             font-size: medium;
         }
 
+        #buscadores {
+            display: flex;
+            align-items: center;
+        }
 
     }
-
-
+    @media screen and (max-width: 1150px) {
+    .busquedaalquileres,
+    .selectoralquileres{
+        font-size: small;
+    }
+    }
     @media screen and (max-width: 975px) {
         .formulariobusqueda {
             width: 250px;
@@ -1049,24 +1102,29 @@ footer {
             width: 200px;
             height: 100px;
         }
-        .navpie1{
+
+        .navpie1 {
             font-size: small;
         }
+
         .navpie,
-       .navpiecont,
-        .navpieprop{
+        .navpiecont,
+        .navpieprop {
             font-size: small;
             margin: 1%;
             padding: 3px;
         }
-        .fb1{
+
+        .fb1 {
             width: 20px !important;
             height: 20px !important;
         }
+
         .textocentral {
             font-size: smaller;
         }
-        .navpiediv{
+
+        .navpiediv {
             margin: auto;
         }
 
@@ -1090,23 +1148,104 @@ footer {
             font-size: smaller;
         }
 
+
         .debajomapa {
             font-size: large;
         }
-        .titulosalquileres      {
+
+        .titulosalquileres {
             font-size: medium;
         }
+
         .busquedaalquileres,
-        .selectoralquileres{
+        .selectoralquileres {
             font-size: x-small;
         }
-        .precio{
+
+        .precio {
             font-size: medium;
         }
+
         .ubicacion,
+        .tipo,
         .descripcion,
-        .detalleinterno{
+        .detalleinterno {
             font-size: small;
+        }
+
+        .formalquileres {
+            display: grid;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #buscador1,
+        #buscador2 {
+            margin-top: 10px;
+            margin: auto;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(38, 85, 146);
+            font-size: smaller;
+            margin-left: 20px;
+        }
+
+        #limpiarFiltros {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(38, 85, 146);
+            font-size: x-small;
+            margin-left: 20px;
+        }
+    }
+
+    @media screen and (max-width: 830px) {
+        .formalquileres {
+            display: grid;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .selectoralquileres {
+            font-size: x-small;
+        }
+
+        #buscador1,
+        #buscador2 {
+            margin: auto;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(38, 85, 146);
+            font-size: x-small;
+            margin-left: 20px;
+        }
+
+        #limpiarFiltros {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(38, 85, 146);
+            font-size: x-small;
+            margin-left: 20px;
         }
     }
 
@@ -1150,6 +1289,7 @@ footer {
             width: 180px;
             height: 80px;
         }
+
         .img2 {
             width: 150px;
             height: 60px;
@@ -1167,10 +1307,12 @@ footer {
         .selectores {
             font-size: smaller;
         }
-        .fb1{
+
+        .fb1 {
             width: 15px !important;
             height: 15px !important;
         }
+
         .h21,
         .p1,
         .p2,
@@ -1233,29 +1375,34 @@ footer {
         .debajomapa {
             font-size: small;
         }
-     
-        .footer{
+
+        .footer {
             display: flex;
         }
+
         .iconospie,
-        .navpiediv{
+        .navpiediv {
             display: grid;
             margin: auto;
         }
+
         .navpie,
         .navpie1,
         .navpiecont,
-        .navpieprop{
+        .navpieprop {
             font-size: small;
             margin: 0%;
-            padding: 0,5px;
+            padding: 0, 5px;
         }
-        .precio{
+
+        .precio {
             font-size: small;
         }
+
         .ubicacion,
+        .tipo,
         .descripcion,
-        .detalleinterno{
+        .detalleinterno {
             font-size: x-small;
         }
     }
@@ -1275,11 +1422,12 @@ footer {
         .navpie1 {
             margin-TOP: 1%;
             margin-right: 1%;
-            
+
         }
-        .navpiediv{ 
-                display: flex;
-                justify-content: space-evenly;
+
+        .navpiediv {
+            display: flex;
+            justify-content: space-evenly;
         }
 
         .navpie,
@@ -1394,41 +1542,55 @@ footer {
             width: 100%;
             height: 100%;
         }
+
         .iconospie,
-        .navpiediv{
+        .navpiediv {
             display: grid;
             margin: auto;
         }
+
         .navpie,
         .navpie1,
         .navpiecont,
-        .navpieprop{
+        .navpieprop {
             font-size: x-small;
             margin: 0%;
-            padding: 0,5px;
+            padding: 0, 5px;
         }
-        .img2{
+
+        .img2 {
             width: 130px;
             height: 50px;
         }
-        .contenedorimagenes{
+
+        .contenedorimagenes {
             margin: 2px;
             padding: 2px;
         }
-        .contenedoralquileres{
+
+        .contenedoralquileres {
             width: auto;
             height: auto;
             margin: auto;
             justify-content: center;
         }
-        .formalquileres{   
+
+        .formalquileres {
             display: grid;
             text-align: center;
             justify-content: center;
             align-items: center;
         }
-        .selectoralquileres{
+
+        .selectoralquileres {
             text-align: center;
+        }
+
+        #listado,
+        #listado1,
+        #listado2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }

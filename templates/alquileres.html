@@ -7,17 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmobiliaria Bella vista</title>
-
-
-
 </head>
 
-
 <body>
-
-
-
-
     <header>
         <!--LOGO DE LA PAGINA, MENU DE NAVEGACIÓN, REDES SOCIALES-->
         <div class="img1">
@@ -38,193 +30,66 @@
     </header>
 
     <main>
+
         <h2 class="titulosalquileres">ALQUILERES</h2>
         <div>
             <div class="formularioalquileres">
-                <form action="">
-                    <div class="formalquileres">
-                        <label for="tipopropiedad" class="busquedaalquileres">Tipo de propiedad</label>
-                        <select id="" name="" class="selectoralquileres">
-                            <option value="Casa">Casa</option>
-                            <option value="Departamento">Departamento</option>
-                        </select>
+                <div class="formalquileres">
+                    <label for="tipopropiedad" class="busquedaalquileres">Tipo de propiedad</label>
+                    <select id="catcasas" name="" class="selectoralquileres">
+                        <option value=""></option>
+                        <option value="alquilerescasas">Casa</option>
+                        <option value="alquileresdeptos">Departamento</option>
+                    </select>
 
-                        <label for="Localidad" class="busquedaalquileres">Localidad</label>
-                        <select id="" name="" class="selectoralquileres">
-                            <option value="Ciudad">Ciudad</option>
-                            <option value="Godoy Cruz">Godoy Cruz</option>
-                            <option value="Guaymallén">Guaymallén</option>
-                            <option value="Las Heras">Las Heras</option>
-                            <option value="Lujan de Cuyo">Lujan de Cuyo</option>
-                            <option value="Maipú">Maipú</option>
-                        </select>
+                    <label for="Localidad" class="busquedaalquileres">Localidad</label>
+                    <select id="localidad" name="" class="selectoralquileres">
+                        <option value=""></option>
+                        <option value="Ciudad">Ciudad</option>
+                        <option value="Godoy Cruz">Godoy Cruz</option>
+                        <option value="Guaymallén">Guaymallén</option>
+                        <option value="Las Heras">Las Heras</option>
+                        <option value="Luján de Cuyo">Luján de Cuyo</option>
+                        <option value="Maipú">Maipú</option>
+                    </select>
 
-                        <label for="Habitaciones" class="busquedaalquileres">Habitaciones</label>
-                        <select id="" name="" class="selectoralquileres">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4 o más">4 o más</option>
-                        </select>
-                        <label for="Rango de precios" class="busquedaalquileres">Rango de precios</label>
-                        <select name="" id="" class="selectoralquileres">
-                            <option value="rango1">US$ 0 a US$ 200</option>
-                            <option value="rango1">US$ 200 a US$ 300</option>
-                            <option value="rango1">US$ 300 a US$ 400</option>
-                            <option value="rango1">US$ 400 o más </option>
-
-                        </select>
+                    <label for="Habitaciones" class="busquedaalquileres">Habitaciones</label>
+                    <select id="habitaciones" name="" class="selectoralquileres">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4 o más">4 o más</option>
+                    </select>
+                    <label for="Rango de precios" class="busquedaalquileres">Rango de precios</label>
+                    <select name="" id="precio" class="selectoralquileres">
+                        <option value=""></option>
+                        <option value="rango1">US$ 0 a US$ 199</option>
+                        <option value="rango2">US$ 200 a US$ 299</option>
+                        <option value="rango3">US$ 300 a US$ 399</option>
+                        <option value="rango4">US$ 400 o más </option>
+                    </select>
+                    <div id="buscadores">
+                        <button id="buscador1">Buscar</button>
+                        <div>
+                            <button id="limpiarFiltros">Limpiar Filtros</button>
+                        </div>
                     </div>
 
-
-
-                </form>
+                </div>
             </div>
-        </div>
-        <div id="listado">
-        <div class="contenedoralquileres">
-            <div class="contenedoralquileres2">
-                <div class="contenedorimagenes">
-                    <img src="../Assets/alquileres/casa2.jpg" alt="Casa2" class="casa2" id="casa1">
-                    <h1 class="precio">US$ 450</h1>
-                    <h2 class="ubicacion">Casa</h2>
-                    <h3 class="ubicacion">Luján de Cuyo</h3>
-                    <p class="descripcion">Elegante y privada, con una
-                        sensación de serenidad que evoca la vida en una hacienda. <br></p>
-                    <p class="detalleinterno"><b>2 Dormitorios | 1 Baño | Cochera | 100 m<sup>2</sup></b></p>
 
-                </div>
-                <div class="contenedorimagenes">
-                    <img src="../Assets/alquileres/casa3.jpg" alt="" class="casa2">
-                    <h1 class="precio">US$ 400</h1>
-                    <h2 class="ubicacion">Casa</h2>
-                    <h3 class="ubicacion">Maipú</h3>
-                    <p class="descripcion">Tranquilidad rural, jardines serenos y rincones para relajarse.
-                    </p>
-                    <p class="detalleinterno"><b>3 Dormitorios | 1 Baño | Patio | 150 m<sup>2</sup></b></p>
-                </div>
-                <div class="contenedorimagenes">
-                    <img src="../Assets/alquileres/casa4.jpeg" alt="" class="casa2">
-                    <h1 class="precio">US$ 400</h1>
-                    <h2 class="ubicacion">Casa</h2>
-                    <h3 class="ubicacion">Ciudad</h3>
-                    <p class="descripcion">Diseño contemporáneo con líneas limpias y grandes ventanales </p>
-                    <p class="detalleinterno"><b>2 Dormitorios | 1 Baño | Cochera | 130 m<sup>2</sup></b></p>
-                </div>
+
+        </div>
+
+        <div>
+
+
+            <div id="listado">
 
             </div>
-            </section>
-
-            <section>
 
 
-                <div class="contenedoralquileres">
-                    <div class="contenedoralquileres2">
-                        <div class="contenedorimagenes">
-                            <img src="../Assets/alquileres/Departamento1.jpg" alt="Casa2" class="casa2">
-                            <h1 class="precio">US$ 250</h1>
-                            <h2 class="ubicacion">Departamento</h2>
-                            <h3 class="ubicacion">Las Heras</h3>
-                            <p class="descripcion"> Espacio moderno y tranquilo con enfoque en la simplicidad.
-                            </p>
-                            <p class="detalleinterno"><b>1 Dormitorio | 1 Baño | Balcón | 70 m<sup>2</sup></b></p>
-                        </div>
-                        <div class="contenedorimagenes">
-                            <img src="../Assets/alquileres/Departamento2.jpg" alt="" class="casa2">
-                            <h1 class="precio">US$ 300</h1>
-                            <h2 class="ubicacion">Departamento</h2>
-                            <h3 class="ubicacion">Godoy Cruz</h3>
-                            <p class="descripcion">Privacidad y tranquilidad con patios interiores y toques
-                                contemporáneos.
-                            </p>
-                            <p class="detalleinterno"><b>2 Dormitorios | 1 Baños | Cochera | 80 m<sup>2</sup></b></p>
-                        </div>
-                        <div class="contenedorimagenes">
-                            <img src="../Assets/alquileres/Departamento3.jpg" alt="" class="casa2">
-                            <h1 class="precio">US$ 200</h1>
-                            <h2 class="ubicacion">Departamento</h2>
-                            <h3 class="ubicacion">Guaymallén</h3>
-                            <p class="descripcion">Ambiente costero, colores claros y acceso directo a la playa.
-                            </p>
-                            <p class="detalleinterno"><b>1 Dormitorio | 1 Baño | Cochera | 60 m<sup>2</sup></b></p>
-                        </div>
-
-                    </div>
-            </section>
-
-
-
-            <section>
-                <div class="contenedoralquileres">
-                    <div class="contenedoralquileres2">
-                        <div class="contenedorimagenes">
-                            <img src="../Assets/alquileres/casa8.jpg" alt="Casa2" class="casa2">
-                            <h1 class="precio">US$ 300</h1>
-                            <h2 class="ubicacion">Casa</h2>
-                            <h3 class="ubicacion">Guaymallén</h3>
-                            <p class="descripcion">Encanto histórico con techos altos y porches amplios.</p>
-                            <p class="detalleinterno"><b>1 Dormitorio | 1 Baño | Patio | 120 m<sup>2</sup></b></p>
-                        </div>
-                        <div class="contenedorimagenes">
-                            <img src="../Assets/alquileres/casa9.jpg" alt="" class="casa2">
-                            <h1 class="precio">US$ 420</h1>
-                            <h2 class="ubicacion">Casa</h2>
-                            <h3 class="ubicacion">Godoy Cruz</h3>
-                            <p class="descripcion">Vanguardia y luminosidad en diseño contemporáneo. </p>
-                            <p class="detalleinterno"><b>3 Dormitorios | 2 Baños | Cochera | 200 m<sup>2</sup></b></p>
-                        </div>
-                        <div class="contenedorimagenes">
-                            <img src="../Assets/alquileres/casa10.jpg" alt="" class="casa2">
-                            <h1 class="precio">US$ 400</h1>
-                            <h2 class="ubicacion">Casa</h2>
-                            <h3 class="ubicacion">Ciudad</h3>
-                            <p class="descripcion">Moderna con grandes ventanales y conexión con el entorno. </p>
-                            <p class="detalleinterno"><b>2 Dormitorios | 1 Baño | Cochera | 180 m<sup>2</sup></b></p>
-                        </div>
-
-                    </div>
-            </section>
-            <section>
-                <div class="contenedoralquileres">
-                    <div class="contenedoralquileres2">
-                        <div class="contenedorimagenes">
-                            <img src="../Assets/alquileres/Departamento4.jpg" alt="Casa2" class="casa2">
-                            <h1 class="precio">US$ 190</h1>
-                            <h2 class="ubicacion">Departamento</h2>
-                            <h3 class="ubicacion">Ciudad</h3>
-                            <p class="descripcion">Privacidad y elegancia, patios interiores y diseño
-                                contemporáneo.
-                            </p>
-                            <p class="detalleinterno"><b>2 Dormitorios | 1 Baño | Cochera | 70 m<sup>2</sup></b></p>
-                        </div>
-                        <div class="contenedorimagenes">
-                            <img src="../Assets/alquileres/Departamento6.jpg" alt="" class="casa2">
-                            <h1 class="precio">US$ 210</h1>
-                            <h2 class="ubicacion">Departamento</h2>
-                            <h3 class="ubicacion">Maipú</h3>
-                            <p class="descripcion">Estilo industrial, espacios abiertos y atmósfera cosmopolita.
-                            </p>
-                            <p class="detalleinterno"><b>1 Dormitorios | 1 Baño | Patio | 50 m<sup>2</sup></b></p>
-                        </div>
-                        <div class="contenedorimagenes">
-                            <img src="../Assets/alquileres/Departamento7.jpg" alt="" class="casa2">
-                            <h1 class="precio">US$ 200</h1>
-                            <h2 class="ubicacion">Departamento</h2>
-                            <h3 class="ubicacion">Las Heras</h3>
-                            <p class="descripcion">Rusticidad y calidez con toques en madera y piedra. </p>
-                            <p class="detalleinterno"><b>1 Dormitorios | 1 Baño | Cochera | 40 m<sup>2</sup></b></p>
-                        </div>
-
-                    </div>
-            </section>
-
-        </div>
-    </div>
-        </div>
-        <script src="../js/ajax.js"></script>
-        <script>
-            GetAlquileres();
-        </script>
 
     </main>
 
@@ -249,9 +114,20 @@
             <img src=../Assets/facebook.png alt="Facebook" style="width: 25px; height: 25px;" class="fb1">
             <img src=../Assets/ig.png alt="Instagram" style="width: 25px; height: 25px;" class="fb1">
             <img src=../Assets/x.png alt="X" style="width: 25px; height: 25px;" class="fb1">
-            <img src=../Assets/wsp.png alt="Whatsapp" style="width: 25px; height: 25px;" class="fb1"> 
+            <img src=../Assets/wsp.png alt="Whatsapp" style="width: 25px; height: 25px;" class="fb1">
         </div>
     </footer>
-</body>
 
-</html>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/filtroalquileres.js"></script>
+    <script>
+        GetAlquileres();
+
+        document.getElementById("buscador1").addEventListener("click", BuscarProductos);
+    </script>
+ 
+    
+           
+</body >
+
+</html >
