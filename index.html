@@ -223,7 +223,7 @@
                         <br><input type="submit" value="Enviar" class="cuadrocontacto" name="cuadro" id="textarea1"
                             style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(54, 54, 126);">
                 </form>
-
+                <div id="mensaje" style="display:none; color: green; margin-top: 10px;">Muchas gracias por su contacto. <br> A la brevedad nos comunicaremos con usted.</div>
 
             </section>
             <section class="mapa">
@@ -240,7 +240,18 @@
             </section>
 
         </section>
+<script>
+           window.onload = function() {
+            document.getElementById('contacto1').reset(); // Limpia los campos del formulario
+        };
+      document.getElementById('contacto1').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            this.reset(); 
+            
 
+            document.getElementById('mensaje').style.display = 'block';
+        });
+</script>
 
 
         <script src="../js/validacionformulario.js"></script>

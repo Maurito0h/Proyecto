@@ -66,3 +66,7 @@ const validarFormulario = (e) => {
 inputs.forEach((input) => {
     input.addEventListener('keyup', validarFormulario);
 });
+
+document.getElementById('contacto1').addEventListener('submit', function() {
+    this.reset();
+});

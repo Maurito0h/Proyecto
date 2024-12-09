@@ -9,15 +9,15 @@ function BuscarProductos() {
 
     switch(precioSeleccionado) {
         case 'rango1':
-            precioMax = 200;
+            precioMax = 199;
             break;
         case 'rango2':
             precioMin = 200;
-            precioMax = 300;
+            precioMax = 299;
             break;
         case 'rango3':
             precioMin = 300;
-            precioMax = 400;
+            precioMax = 399;
             break;
         case 'rango4':
             precioMin = 400;

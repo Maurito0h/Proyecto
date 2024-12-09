@@ -56,21 +56,21 @@
                     <label for="nombre">Nombre</label>
                 </div>
                     <div>
-                    <input type="text" name="nombre" placeholder="Ingrese su nombre" class="cuadrocontacto" style="width: 300px;">
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre" required="" class="cuadrocontacto" style="width: 300px;">
                     <div class="error-message" id="error-nombre" style="display: none; color: red;"></div>
                 </div>
                 <div>
                     <label for="tel">Teléfono</label>
                 </div>
                 <div>
-                    <input type="tel" name="tel" placeholder="Ingrese su teléfono" class="cuadrocontacto" style="width: 300px;">
+                    <input type="tel" name="tel" placeholder="Ingrese su teléfono" required="" class="cuadrocontacto" style="width: 300px;">
                     <div class="error-message" id="error-tel" style="display: none; color: red;"></div>
                 </div>
                 <div>
                     <label for="email">Email</label>
                 </div>
                     <div>
-                    <input type="email" name="email" placeholder="Ingrese su email" class="cuadrocontacto" style="width: 300px;">
+                    <input type="email" name="email" placeholder="Ingrese su email" required="" class="cuadrocontacto" style="width: 300px;">
                     <div class="error-message" id="error-email" style="display: none; color: red;"></div>
                 </div>
             <textarea class=cuadrocontacto placeholder="Ingrese su consulta, duda o sugerencia" required=""
@@ -80,7 +80,7 @@
             <br><input type="submit" value="Enviar" class="cuadrocontacto" name="cuadro" id="textarea1"
                 style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(54, 54, 126);">
         </form>
-
+        <div id="mensaje" style="display:none; color: green; margin-top: 10px;">Muchas gracias por su contacto. <br> A la brevedad nos comunicaremos con usted.</div>
 
     </section>
     <section class="mapa">
@@ -99,7 +99,18 @@
 </section>
 
 <script src="../js/validacionformulario.js"></script>
+<script>
+       window.onload = function() {
+            document.getElementById('contacto1').reset(); // Limpia los campos del formulario
+        };
+      document.getElementById('contacto1').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            this.reset(); 
+            
 
+            document.getElementById('mensaje').style.display = 'block';
+        });
+</script>
     </main>
 
 

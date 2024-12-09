@@ -105,6 +105,11 @@ header {
     text-decoration: dashed;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+#mensaje{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    display: grid;
+}
 
 .textocontacto {
     text-align: center;
@@ -1053,7 +1058,7 @@ footer {
             display: flex;
             align-items: center;
         }
-
+    
     }
     @media screen and (max-width: 1150px) {
     .busquedaalquileres,
